@@ -10,5 +10,10 @@ This was made for fun only.
 
 ## The JK2.bat
 
-It is desing to be edited an overcharge the cpu of a computer if it keeps on running.
+It is desing to be edited in amount of reps an overcharge the cpu of a computer if it keeps on running.
 Have fun.
+
+## The JK3.bat
+
+It is a mix of JK and JK2, uses the animations from JK and randomly uses one for each window it opens.
+An also, can edit to chosse the amount of windows created on variable "reps" like JK 2
