@@ -7,7 +7,8 @@ set reps=5
 
 
 for /l %%i in (1, 1, %reps%) do (
-    start cmd /k "color a & curl ascii.live/nyan"
+    start "Nyan Cat" cmd /k "color a & curl ascii.live/nyan"
 )
+
 
 exit
