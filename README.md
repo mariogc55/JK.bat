@@ -17,3 +17,7 @@ Have fun.
 
 It is a mix of JK and JK2, uses the animations from JK and randomly uses one for each window it opens.
 An also, can edit to chosse the amount of windows created on variable "reps" like JK 2
+
+## The nuke.bat
+
+Its a fake nuke menu (kind of) made for fun. :D
