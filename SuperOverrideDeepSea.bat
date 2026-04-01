@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 title SUPER OVERRIDE - DEEP SEA EDITION
 mode con: cols=95 lines=35
-
+:: Other batch games on my super override games repository
 :boot
 cls
 color 0b
@@ -62,7 +62,7 @@ echo  DEEP SEA SONAR - BUSQUEDA DE TESOROS
 echo  --------------------------------------------------------
 echo  TESOROS RECOLECTADOS: %score% ^| PROFUNDIDAD: %sy%00m
 echo.
-:: Renderizado del Mapa Táctico
+
 echo  ######################
 for /l %%y in (1,1,10) do (
     set "line=#"
@@ -79,7 +79,7 @@ echo.
 echo  [ W,A,S,D + ENTER para navegar ] [ M para emerger ]
 echo.
 
-:: Detección de Tesoro
+
 if %sx%==%tx% if %sy%==%ty% (
     set /a score+=1
     set /a tx=%random% %% 18 + 1
@@ -87,7 +87,7 @@ if %sx%==%tx% if %sy%==%ty% (
     goto sonar_loop
 )
 
-:: Control de Movimiento
+
 set "move="
 set /p "move=RUMBO >> "
 if /i "%move%"=="M" goto menu
@@ -96,7 +96,6 @@ if /i "%move%"=="S" set /a sy+=1
 if /i "%move%"=="A" set /a sx-=1
 if /i "%move%"=="D" set /a sx+=1
 
-:: Lógica de Colisión (Paredes)
 if %sx% LSS 1 goto sonar_dead
 if %sx% GTR 20 goto sonar_dead
 if %sy% LSS 1 goto sonar_dead
